@@ -14,7 +14,7 @@ This is a solution to the [Loopstudios landing page on Frontend Mentor](https://
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Author](#mark kasule)
+- [Author](#markkasule)
 
 
 ## Overview
