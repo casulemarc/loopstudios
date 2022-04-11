@@ -1,4 +1,4 @@
-# loop Studios
+# Loop Studios
 A build out this studio's landing page.
 
 ## Task
@@ -10,3 +10,5 @@ Your users should be able to:
 - See hover states for all interactive elements on the page.
 
 ## Preview
+![desktop-preview](https://user-images.githubusercontent.com/31680529/162803114-38cb22b2-9bd6-49fc-a2be-806e5c56ca0f.jpg)
+
