@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/casulemarc/loopstudios)
-- Live Site URL: (https://your-live-site-url.com)
+- Live Site URL: [Coming Soon](#)
 
 ## My process
 
