@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![desktop-design](https://user-images.githubusercontent.com/31680529/162809552-32f8a990-941a-45d6-9df5-21176ba58fbd.jpg)
+[![desktop-design](https://user-images.githubusercontent.com/31680529/162809552-32f8a990-941a-45d6-9df5-21176ba58fbd.jpg)](https://loopstudiosdemo.netlify.app/)
 
 ### Links
 
