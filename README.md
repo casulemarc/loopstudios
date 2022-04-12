@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/casulemarc/loopstudios)
-- Live Site URL: [Coming Soon](#)
+- Live Site URL: [Web App](https://loopstudiosdemo.netlify.app/)
 
 ## My process
 
