@@ -12,6 +12,10 @@ body a {
     text-decoration: none;
 }
 
+body a:hover {
+    color: #f464f9;
+}
+
 .header-section {
     width: 100%;
     height: auto;
@@ -36,9 +40,14 @@ body a {
 .menu-logo {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
+    width: 100%;
     align-items: center;
-    margin: 0.2rem;
+    font-size: 1.5rem;
+}
+
+.menu-logo img {
+    display: none;
 }
 
 .menu-items {
@@ -46,7 +55,7 @@ body a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 0.2rem;
+    font-size: 1.5em;
 }
 
 .menu-items li {
@@ -54,10 +63,24 @@ body a {
     margin-right: 0.5rem;
     list-style: none;
     padding: 0.5rem;
+    width: 100%;
+}
+
+.menu-items li:hover {
+    background-color: #d103d8;
+    width: 100%;
+    color: #fff;
+    box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.menu-items a:hover {
+    color: #fff;
 }
 
 .menu-items a {
     color: #fff;
+    font-weight: bold;
+    width: 100%;
 }
 
 .intro-section {
@@ -136,15 +159,35 @@ body a {
     width: 100%;
 }
 
+.creations-header h2 {
+    font-weight: 700;
+}
+
 .creations-header button {
     background-color: #fff;
     padding: 10px;
     width: 10%;
-    border: solid #cccccc;
+    border: 3px solid #d103d8;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+button a {
+    color: #d103d8;
+}
+
+.creations-header button:hover {
+    cursor: pointer;
+    box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.creations-header button a:hover {
+    color: #f464f9;
 }
 
 .creations-header button:active {
     background-color: #ddd;
+    color: #d103d8;
 }
 
 .cards-section {
@@ -171,18 +214,20 @@ body a {
 
 .card-image img {
     border-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 6px 13px rgba(0, 0, 0, 0.5);
 }
 
 .card-title {
     position: absolute;
     bottom: 0px;
-    padding: 1rem;
-    background-color: #fff;
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: auto;
     transform: transition;
-    color: #000;
-    border: 3px solid #ddd;
+    color: #fff;
     border-top: none;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
@@ -190,40 +235,140 @@ body a {
 
 .card-title:hover {
     width: 100%;
-    height: 100%;
+    padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-radius: 0.5rem;
-    transition: all 300ms;
-    border: 3px solid #ddd;
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
 }
 
-.card-title img:hover {
-    display: none;
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(14, 13, 13);
+    padding: 2rem;
+    color: #fff;
+    width: 100%;
 }
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0.5rem;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.social-icons a {
+    margin: 5px;
+}
+
+.rights {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+}
+
+.rights div {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #ccc;
+}
+
+.page-links {
+    justify-content: flex-start;
+}
+
+.page-links a {
+
+    padding-right: 0.5rem;
+    color: #ccc;
+}
+
+.page-links a:hover {
+    color: #f464f9;
+}
+
+.copyright {
+    justify-content: flex-end;
+}
+
+.attributes {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #ccc;
+}
+
+.attributes a {
+    text-decoration: none;
+    color: #d103d8;
+}
+
 
 /* MOBILE DISPLAYS SMALL THAN 1200PX*/
 
 @media only screen and (max-width: 1200px) {
+
     #header {
         flex-direction: column;
-        width: 100vh;
+        width: 100%;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 0.5rem;
+        transition: all 3ms;
+    }
+
+    /* will append this class to menu when hamburger is pressed*/
+    .header-pop-up {
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: all 4ms;
     }
 
     .menu-logo {
         width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+    }
+
+    .menu-logo img {
+        display: flex;
+        cursor: pointer;
+    }
+
+    #icon-close {
+        display: none;
     }
 
     .menu {
         display: none;
         /* display: none; ""will hide menu"" */
-        background-color: #000;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -234,16 +379,20 @@ body a {
 
     .menu-items {
         width: 100%;
+        height: 100%;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         text-align: center;
         margin: 5px;
     }
 
     .menu-items li {
         width: 100%;
-        margin: 1rem;
+        margin: 0.5rem;
+        padding: 1rem;
+        background-color: #d103d8;
+        border-radius: 3px;
     }
 
     .intro-section {
@@ -300,5 +449,58 @@ body a {
         margin-left: 2.5%;
         margin-right: 2.5%;
         width: 95%;
+    }
+
+    .cards-section {
+        display: grid;
+        grid-template-columns: auto auto;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .cards-categories {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .card-image img {
+        width: 100% !important;
+    }
+
+    .card-title {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .card-title:hover {
+        width: 100%;
+        padding: 1.5rem;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .footer-links div {
+        flex-direction: column;
+        margin: 0.5rem;
+    }
+
+    .social-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .rights {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .page-links {
+        width: 100%;
     }
 }
