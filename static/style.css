@@ -503,4 +503,10 @@ button a {
     .page-links {
         width: 100%;
     }
+
+    .attributes {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 }
