@@ -316,10 +316,12 @@ button a {
 .attributes {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     color: #ccc;
+    gap: 0.5rem;
 }
 
 .attributes a {
@@ -505,6 +507,7 @@ button a {
     }
 
     .attributes {
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
