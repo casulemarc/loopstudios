@@ -22,6 +22,7 @@ body a:hover {
     background-image: url("/images/desktop/vr.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 100%;
     padding: 2rem;
 }
