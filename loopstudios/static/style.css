@@ -337,7 +337,7 @@ button a {
 
     #header {
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         height: auto;
         background-color: rgba(0, 0, 0, 0.9);
         border-radius: 0.5rem;
@@ -349,10 +349,10 @@ button a {
     /* will append this class to menu when hamburger is pressed*/
     .header-pop-up {
         flex-direction: column;
-        width: 100%;
         background-color: rgba(0, 0, 0, 0.5);
         transition: all 4ms;
         height: auto;
+        width: 100%;
     }
 
     .menu-logo {
